@@ -1,0 +1,18 @@
+global:
+  checkNewVersion: false
+  sendAnonymousUsage: false
+entryPoints:
+  http:
+    address: :80
+
+api:
+  dashboard: true
+  insecure: true
+ping:
+  entryPoint: address
+log:
+  level: INFO
+
+accessLog:
+  format: json
+  filePath: "/var/log/access.log"

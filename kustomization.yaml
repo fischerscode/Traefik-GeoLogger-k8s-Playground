@@ -1,0 +1,11 @@
+resources:
+  - namespace.yaml
+  - deployment.yaml
+  - service.yaml
+
+namespace: traefik-playground
+
+configMapGenerator:
+  - name: traefik-config-static
+    files:
+      - config/traefik.yaml
